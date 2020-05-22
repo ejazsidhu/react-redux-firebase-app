@@ -1,8 +1,22 @@
 import React, { Component } from 'react';
+import Notification from './Notifications';
+import ProjectList from "../projects/ProjectList"
 class Dashboard extends Component {
     state = {  }
     render() { 
-        return (  );
+        return ( 
+            <div className="dashboard container">
+                <div className="row">
+                    <div className="col s12 m6">
+                        <ProjectList/>
+                    </div>
+                    <div className="col s12 m5 offset-m1">
+                        <Notification/>
+                    </div>
+                
+                </div>
+            </div>
+         );
     }
 }
  
