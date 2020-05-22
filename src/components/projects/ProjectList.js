@@ -1,14 +1,14 @@
 import React from 'react';
-import ProjectDetails from './ProjectDetail';
+import ProjectSummary from './ProjectSummary';
 
 
 const ProjectList=()=>{
     return (
         <div className="project-list section">
-            <ProjectDetails/>
-            <ProjectDetails/>
-            <ProjectDetails/> 
-            <ProjectDetails/>
+            <ProjectSummary/>
+            <ProjectSummary/>
+            <ProjectSummary/> 
+            <ProjectSummary/>
 
         </div>
     )

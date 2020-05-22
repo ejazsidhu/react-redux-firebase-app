@@ -1,17 +1,22 @@
-import React from 'react';
+import React from 'react'
 
-
-const ProjectDetails=()=>{
+const ProjectDetail = (props) => {
+    console.log(props.match.params['id'])
+    const id=props.match.params['id'];
     return (
-        
-            <div className="card z-depth-0 project-summary">
-               <div className="card-content grey-text text-darken-3"></div>
-               <span className="card-title">Project title</span>
-               <p>Posted by Ejaz sidhu</p>
-               <p className="grey-text">3rd September, 2am</p>
-            </div>
-       
+       <div className="container section project-detail">
+           <div className="card z-depth-0">
+               <div className="card-content">
+    <span className="card-title"> Project Title {id?id:''}</span>
+                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero voluptatibus qui nihil doloribus. A dolor nesciunt numquam unde, molestias dicta magnam, laudantium accusamus doloremque suscipit at sapiente quod sed! Eos!</p>
+               </div>
+               <div className="card-action grey lighten-4 grey-text">
+                   <div>Posted by Ejaz sidhu</div>
+                   <div>3rd September,2am</div>
+               </div>
+           </div>
+       </div>
     )
 }
 
-export default ProjectDetails;
+export default ProjectDetail;
