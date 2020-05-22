@@ -4,7 +4,9 @@ import React, { Component } from 'react'
 class SignUp extends Component {
     state = { 
         email:'',
-        password:null
+        password:'',
+        firstName:'',
+        lastName:''
      }
     handleSubmit=(e)=>{
         e.preventDefault();
